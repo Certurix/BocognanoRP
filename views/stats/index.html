@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      background-color: #333333
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #0095ff;
+      color: white;
+      text-align: center;
+    }
+    .border {
+      border: 5px outset #1C6EA4;
+      border-radius: 40px;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: white;
+      transform: translate(-50%, 0%);
+    }
+    .border2 {
+      border: 5px outset #1C6EA4;
+      border-radius: 40px;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      color: white;
+      transform: translate(-50%, 0%);
+    }
+    .border3 {
+      border: 5px outset #1C6EA4;
+      border-radius: 40px;
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      color: white;
+      transform: translate(-50%, 0%);
+    }
+    .borderText {
+      width: 0px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: white;
+      transform: translate(-50%, 0%);
+    }
+
+    .bg {
+      background: #FF6E44;
+      background: -moz-linear-gradient(
+        left,
+        #FF6E44 0%,
+        #2CABFF 100%,
+        #FFBD47 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        #FF6E44 0%,
+        #2CABFF 100%,
+        #FFBD47 100%
+      );
+      background: linear-gradient(
+        to right,
+        #FF6E44 0%,
+        #2CABFF 100%,
+        #FFBD47 100%
+      );
+    }
+    .Title {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #000000;
+      font-weight: 700;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: small-caps;
+      text-transform: uppercase;
+      color: white;
+    }
+    .Texte {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      color: white;
+    }
+    .TexteSPE {
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 3px;
+      letter-spacing: 0px;
+      word-spacing: 1px;
+      color: #000000;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      height: 100%;
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      color: white;
+    }
+    /* Button */
+    .container {
+      height: 100%;
+      position: absolute;
+      top: 180%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .btn {
+      margin-top: calc(50% + 25px);
+      position: relative;
+      display: inline-block;
+      width: 277px;
+      height: 50px;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: transparent;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+      letter-spacing: 0.045em;
+    }
+
+    .btn svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .btn svg rect {
+      //stroke: #EC0033;
+      stroke-width: 4;
+      stroke-dasharray: 353, 0;
+      stroke-dashoffset: 0;
+      -webkit-transition: all 600ms ease;
+      transition: all 600ms ease;
+    }
+
+    .btn span {
+      background: rgb(255, 130, 130);
+      background: -moz-linear-gradient(
+        left,
+        rgba(255, 130, 130, 1) 0%,
+        rgba(225, 120, 237, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(255, 130, 130, 1) 0%,
+        rgba(225, 120, 237, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(255, 130, 130, 1) 0%,
+        rgba(225, 120, 237, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn:hover svg rect {
+      stroke-width: 4;
+      stroke-dasharray: 196, 543;
+      stroke-dashoffset: 437;
+    }
+  </style>
+  <head>
+<title>STATS</title>
+<meta name="Content-Type" content="UTF-8">
+<meta name="Content-Language" content="fr">
+<meta name="Description" content="Site web officiel de Bocognano RP ! Ce site vous offre les statistiques actualisés du jeu, la possibilité de voir les dernières logs du MetaProfile (MP) et de rejoindre directement le jeu !">
+<meta name="Keywords" content="Bocognano RP,site web,roleplay,roblox,rp,français,francais,fr,rbx,website">
+<meta name="Author" content="Certurix">
+<meta name="Revisit-After" content="15 days">
+<meta name="Rating" content="14 years">
+<meta name="Distribution" content="global">
+<meta name="Category" content="games">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body style="margin:0px;margin-left:0px;margin-top:0px;background-color:#333333;" class="bg">
+    <div class="border">
+      <h1 style="text-align:center" class="Title">
+        Joueurs connectés
+      </h1>
+      <p
+        id="playing"
+        class="Texte borderText"
+        style="text-align:center;font-size:50px;width:100vw"
+      ></p>
+    </div>
+    <div class="border2">
+      <h1 style="text-align:center" class="Title">
+        Nombres de visites
+      </h1>
+      <p
+        id="visits"
+        class="Texte borderText"
+        style="text-align:center;font-size:50px;width:100vw"
+      ></p>
+    </div>
+    <div class="border3">
+      <h1 style="text-align:center" class="Title">
+        GameTag
+      </h1>
+      <p
+        id="name"
+        class="TexteSPE borderText"
+        style="text-align:center;font-size:20px"
+      ></p>
+    </div>
+    <script>
+      function Repeat() {
+        fetch("/api/getData", { method: "GET" }).then(function(response) {
+          response.json().then(function(result) {
+            var firstPlace = result.data[0];
+            var joueurs = firstPlace.playing;
+            document.getElementById("playing").innerHTML = joueurs;
+            var visites = firstPlace.visits;
+            document.getElementById("visits").innerHTML = visites;
+            var nom = firstPlace.name;
+            document.getElementById("name").innerHTML = nom;
+          });
+        });
+      }
+      setInterval(Repeat, 1000);
+    </script>
+
+    <!--<div>
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css"
+      />
+      <div class="container">
+        <a href="https://www.roblox.com/games/4208629943/Rejoignez-le-groupe-le-de-France-RP-V-2-1" class="btn">
+          <svg width="277" height="62">
+            <defs>
+              <lineargradient id="grad1">
+                <stop offset="0%" stop-color="#FF8282" />
+                <stop offset="100%" stop-color="#E178ED" />
+              </lineargradient>
+            </defs>
+            <rect
+              x="5"
+              y="5"
+              rx="25"
+              fill="none"
+              stroke="url(#grad1)"
+              width="266"
+              height="50"
+            ></rect>
+          </svg>
+          <!--<span>Voir mes réalisations</span>-->
+          <!--<span>Rejoindre</span>-->
+        </a>
+      </div>
+    </div>
+    
+    
+
+    <div class="footer Texte">
+      <p>
+        Propulsé par <span href="https://glitch.com">Glitch.com</span> | Fait par Certurix
+      </p>
+    </div>
+  </body>
+</html>
